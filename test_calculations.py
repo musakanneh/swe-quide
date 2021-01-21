@@ -24,9 +24,9 @@ class TestCalculations(unittest.TestCase):
         """Testing the multiplication of numbers"""
         self.assertEqual(calculations.mul(10, 2), 20)
 
-    def test_subtract(self):
+    def test_divide(self):
         """Testing the division of numbers"""
-        self.assertEqual(calculations.subtract(10, 4), 6)
+        self.assertEqual(calculations.divide(10, 5), 2)
 
 
 if __name__ == '__main__':
