@@ -18,7 +18,7 @@ TDD recommends writing tests that would check the functionality of your code pri
   - Executes in development environment instead of production environment
   - Test is implemented in an automated fashion
 
-  ### Steps in performing a unittest
+### Steps in performing a unittest
 
   - Setup step: testing the test strings
   - Action step: calls the production code to perform the action that is on the test
@@ -27,4 +27,3 @@ TDD recommends writing tests that would check the functionality of your code pri
 - Component Testing: Testing at the library and complete binary level
 - System Testing: tests the external interfaces of a system which is a collection of sub-systems
 - Performance Testing: testing done at the sub-system and system levels to verify timing and resource usages are acceptable
-# python-tdd
