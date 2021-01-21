@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 
-"""Import the testing models"""
+"""Import the testing model
++ functions
+
+"""
 import unittest
 import calculations
 

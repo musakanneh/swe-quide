@@ -9,7 +9,7 @@ def add(x, y):
         y(int): integer input
 
     """
-    if x not in [int, float]:
+    if not isinstance(x, int):
         raise ValueError("Number must be an integer")
     return x + y
 
