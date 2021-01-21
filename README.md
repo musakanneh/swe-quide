@@ -6,8 +6,8 @@ If it's not tested it doesn't work!
 
 ## Overview
 
-A process where the developer takes responsibility for writing quality code
-TDD recommends writing tests that would check the functionality of your code prior to your writing the actual code
+Test Driven Development is a process where the developer takes responsibility for writing quality code.
+TDD recommends writing tests that would check the functionality of your code prior to your writing the actual code.
 
 ## Levels of testing
 
