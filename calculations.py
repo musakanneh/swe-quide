@@ -3,6 +3,7 @@
 
 def add(x, y):
     """Adds two numbers
+
      Args:
         x(int): integer input
         y(int): integer input
@@ -52,6 +53,3 @@ def divide(x, y):
     if y == 0:
         raise ValueError("Can't divide by 0")
     return x / y
-
-
-print(subtract(600, 200))
