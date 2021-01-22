@@ -11,7 +11,7 @@ class Employee:
     raise_amt = 1.05
 
     def __init__(self, first_name, last_name, pay_bills):
-        """I stantiating the employee's artributes
+        """Instantiating the employee's artributes
 
         Args:
             first():
@@ -20,16 +20,18 @@ class Employee:
 
         """
         self.first_name = first_name
-        self.last_name = first_name
+        self.last_name = last_name
         self.pay_bills = pay_bills
 
+    @property
     def email(self):
         """Employe's email method"""
-        return ("{}.{}@email.com".format(self.first, self.last))
+        return ("{}.{}@email.com".format(self.first_name, self.last_name))
 
+    @property
     def full_name(self):
         """Returns the employee's full name"""
-        return ("{} {}".format(self.first, self.last))
+        return ("{} {}".format(self.first_name, self.last_name))
 
     def apply_raises(self):
         self.pay_bills = int(self.pay_bills * self.raise_amt)
