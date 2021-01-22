@@ -13,7 +13,6 @@ class TestEmployee(unittest.TestCase):
     """A test class for the employee's model
 
     """
-
     @classmethod
     def setUpClass(cls):
         """Static method for set-up
