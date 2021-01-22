@@ -26,12 +26,14 @@ class Employee:
     @property
     def email(self):
         """Employe's email method
+        
         """
         return ("{}.{}@email.com".format(self.first_name, self.last_name))
 
     @property
     def full_name(self):
         """Returns the employee's full name
+        
         """
         return ("{} {}".format(self.first_name, self.last_name))
 
