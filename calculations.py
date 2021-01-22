@@ -26,7 +26,7 @@ def subtract(x, y):
 
     """
     result = x - y
-    if result >= 100:
+    if result >= 1000:
         raise ValueError("Result is too big")
     return result
 
