@@ -6,7 +6,11 @@ Then. generates the user's band name
 
 
 class BandNameGenerator:
-    """Model for band name generator"""
+    """Class model to generate band name"""
+
+    def __init__(self):
+        """Constructs the user's location"""
+        return
 
     def welcome_note(self):
         """Displays a welcome note"""
@@ -21,10 +25,6 @@ class BandNameGenerator:
 
     location = input("Name of the city that you grew up in: ")
     pet_name = input("Name of a pet: ")
-
-    def __init__(self):
-        """Constructs the user's location"""
-        return
 
     def out_put(self):
         """Prints the user's band name"""

@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 
-
-"""Import the testing model
-+ program  for testing
-
-"""
 import unittest
 import calculations
 
@@ -33,7 +28,7 @@ class TestCalculations(unittest.TestCase):
         """Testing the division of numbers"""
         self.assertEqual(calculations.divide(10, 5), 2)
         self.assertEqual(calculations.divide(50, 10), 5)
-        
+
         # using contex manager to test for edge cases
         with self.assertRaises(ValueError):
             calculations.divide(10, 2)
