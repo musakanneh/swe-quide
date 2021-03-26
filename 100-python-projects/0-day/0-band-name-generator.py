@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Gets the name of user's city and pet
+"""Gets the name of user's city and pet
 Then. generates the user's band name
 """
 
@@ -16,7 +15,7 @@ class BandNameGenerator:
         """Displays a welcome note"""
         content = [
             "Welcome to the Band Name Generator",
-            "Please respond to the following questions to complet the game.",
+            "Answer the following questions to complet the game.",
             "Enjoy the game :)"
         ]
         for items in content:
