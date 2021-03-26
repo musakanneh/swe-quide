@@ -20,7 +20,7 @@ class BandNameGenerator:
     print(welcome_note(""))
 
     location = input("Name of the city that you grew up in: ")
-    pet_name = input("Name of pet: ")
+    pet_name = input("Name of a pet: ")
 
     def __init__(self):
         """Constructs the user's location"""
