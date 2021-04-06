@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Gets the name of user's city and pet
-Then. generates the user's band name
+"""Gets user's city and pet's name to generate user's band
 """
 
 
@@ -8,14 +7,16 @@ class BandNameGenerator:
     """Class model to generate band name"""
 
     def __init__(self):
-        """Constructs the user's location"""
+        """Constructs the user's location
+        """
         return
 
     def welcome_note(self):
-        """Displays a welcome note"""
+        """Displays a welcome note
+        """
         content = [
-            "Welcome to the Band Name Generator",
-            "Answer the following questions to complet the game.",
+            "Welcome to your Band Name Generator",
+            "Answer the following questions to complete the game.",
             "Enjoy the game :)"
         ]
         for items in content:
@@ -26,8 +27,10 @@ class BandNameGenerator:
     pet_name = input("Name of a pet: ")
 
     def out_put(self):
-        """Prints the user's band name"""
-        result = BandNameGenerator.location + " " + BandNameGenerator.pet_name
+        """Prints the user's band name
+        """
+        result = BandNameGenerator.location\
+            + " " + BandNameGenerator.pet_name
         if len(BandNameGenerator.location) <= 1:
             raise TypeError("Location name too short")
         print("Your band name could be {}".format(result))

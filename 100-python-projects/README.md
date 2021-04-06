@@ -1,3 +1,3 @@
 # Projects Line up
-- Day-0: The Band Name Generator End
-- Day-1: Tip calculator
+1. The Band Name Generator End
+2. Day-1: Tip calculator
