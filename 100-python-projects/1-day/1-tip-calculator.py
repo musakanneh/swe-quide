@@ -35,6 +35,7 @@ class TipCaculator:
         """Returns a person's contribution to the general tip"""
         if type(TipCaculator.total_bill) not in [int, float]:
             raise ValueError("bill must be in number(s)")
+        
         return (TipCaculator.bill_percent / 100) * \
             (1 / TipCaculator.total_bill
 
