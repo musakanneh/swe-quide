@@ -3,7 +3,7 @@
 
 
 def bmi_calculator():
-    """Interprets the Body Mass Index (BMI)
+    """Interprets the body mass index (BMI)
     on a user weight and height"""
     user_height = float(input("Enter your height in meter: "))
     user_weight = float(input("Enter your weight in kg: "))
