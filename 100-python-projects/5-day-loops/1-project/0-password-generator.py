@@ -18,17 +18,21 @@ def password_generator():
     nr_symbols = int(input(f"How many symbols would you like?: "))
     nr_numbers = int(input(f"How many numbers would you like?: "))
 
-    password = ""
-
+    password_list = []
     for char in range(1, nr_letters + 1):
-        password += random.choice(letters)
+        password_list.append(random.choice(letters))
 
     for char in range(1, nr_symbols + 1):
-        password += random.choice(symbols)
+        password_list.append(random.choice(symbols))
 
     for char in range(1, nr_numbers + 1):
-        password += random.choice(numbers)
+        password_list.append(random.choice(numbers))
 
+    random.shuffle(password_list)
+
+    password = ""
+    for char in password_list:
+        password += char
     print("This is your password is: {}".format(password))
 
 
