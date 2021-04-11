@@ -36,4 +36,5 @@ def password_generator():
     print("This is your password is: {}".format(password))
 
 
-print(password_generator())
+if __name__ == '__main__':
+    password_generator()

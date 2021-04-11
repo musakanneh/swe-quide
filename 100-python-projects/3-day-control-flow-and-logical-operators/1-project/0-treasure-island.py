@@ -61,4 +61,5 @@ def treasure_island():
         print("Attacked by a trout. {}.".format(end_game))
 
 
-print(treasure_island())
+if __name__ == '__main__':
+    treasure_island()
