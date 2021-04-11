@@ -23,6 +23,9 @@ def hangman():
     while not end_of_game:
         guess = input("Guess a letter: ").lower()
 
+        if guess in display:
+            print("You's already guessed {}".format(guess))
+
         for position in range((len(chosen_word))):
             letter = chosen_word[position]
             if letter == guess:
@@ -30,6 +33,8 @@ def hangman():
         print(display)
 
         if guess not in chosen_word:
+            print(
+                "You guessed {}, which is not in the word. You've lose a life.".format(guess))
             lives -= 1
             if lives == 0:
                 end_of_game = True
