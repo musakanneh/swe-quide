@@ -34,6 +34,7 @@ operations = {
 
 
 def calculator():
+    """Implements the calcultions"""
     num_input_1 = float(input("What is the first number? "))
     for symbol in operations:
         print(symbol)
@@ -58,5 +59,4 @@ def calculator():
 
 
 if __name__ == '__main__':
-    # print(logo)
     calculator()
