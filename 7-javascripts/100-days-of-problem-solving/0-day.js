@@ -3,14 +3,15 @@
  * @param {number[]}
  * @return {number[]}
  */
- var getConcatenation = function(nums) {
-    nums = [1, 2, 1]; let ans_array = [];
+var getConcatenation = function (nums) {
+    let ans = [];
+    let num_len = nums.length;
 
-    for (let i = 0; i < nums.length; i++) {
-        ans_array += nums[i];
-    }
+    nums.forEach((nums, i) => {
+        ans[i] = nums;
+        ans[i + num_len] = nums;
+    });
 
-    let result = [nums + ans_array];
-    console.log(result)
+    return ans;
 };
-getConcatenation();
+console.log(getConcatenation());
