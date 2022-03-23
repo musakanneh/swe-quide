@@ -1,4 +1,5 @@
 /**
+ * https://leetcode.com/problems/sum-of-all-odd-length-subarrays/submissions/
  * @param {number[]} arr
  * @return {number}
  */
