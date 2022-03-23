@@ -8,8 +8,8 @@
     if (nums.length < 3) {
         return ret;
     }
-    nums.sort((a,b) => a - b);   
-
+    nums.sort((a,b) => a - b);
+    
     for (let i = 0; i < nums.length - 2 && nums[i] <= target; i++) {
         if (i > 0 && nums[i] == nums[i - 1]) {
             continue;
