@@ -10,7 +10,6 @@
         for (let j = i; j < arr.length; j++) {
             let sub_arr_len = j - i + 1;
             let is_sub_arr_odd = sub_arr_len % 2 !== 0;
-            
             if (!is_sub_arr_odd) {
                 continue;
             }
