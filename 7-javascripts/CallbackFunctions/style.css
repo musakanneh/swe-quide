@@ -1,0 +1,10 @@
+button {
+    background-color: #303030;
+    border: none;
+    padding: 1rem 3rem;
+    color: #fbfbfb;
+}
+
+.altColor {
+    background-color: green;
+}
