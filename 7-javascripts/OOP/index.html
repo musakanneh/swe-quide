@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Books</h1><br>
+        <form id="book-form">
+            <div>
+                <label for="title">Title</label><br>
+                <input type="text" id="title"><br>
+            </div>
+            <div>
+                <label for="author">Author</label><br>
+                <input type="text" id="author"><br>
+            </div>
+            <div> 
+                <label for="isbin">ISBN</label><br>
+                <input type="text" id="isbin"><br><br>
+            </div>
+            <div>
+                <input type="submit" value="submit"></input>
+            </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
