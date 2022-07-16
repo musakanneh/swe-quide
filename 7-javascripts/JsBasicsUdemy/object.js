@@ -1,18 +1,8 @@
-#!/usr/bin/node
-
-let jsObject = () => {
-  let person = {
-    name: "Musa",
-    age: 30,
-  };
-
-  if (person.name !== "Musa") {
-    console.log("Not the name");
-  } else {
-    console.log("That's the name buddy");
-  }
-
-  console.log(person);
+var isIsomorphic = function(s, t) {
+  let myMap = new Map();
+  myMap.set(1, 'Musa');
+  myMap.forEach(function(value, key){
+      console.log(value + " " + key);
+  })
 };
-
-jsObject();
+console.log(isIsomorphic(s = "egg", t = "add"));

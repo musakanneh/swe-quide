@@ -1,4 +1,4 @@
-let printHelloWorld = () => {
-  console.log("Hello world");
-};
-printHelloWorld();
+class Calculator {
+  addTwoNumber(numOne, numTwo) {
+  }
+}

@@ -1,11 +1,25 @@
-#!/usr/bin/node
+const wordPattern = (pattern, s) => {
+    const splitString = s.split(' '); 
 
-function soupServings(n) {
-  /**
-   * Return the probability that soup A will be empty first,
-   * plus half the probability that A and B become empty at the same time.
-   */
-  
-}
+    if (splitString.length !== pattern.length) return false;
+    const map = {};
+    
+    for (let i = 0; i < pattern.length; i++) {
+      let letterFromPattern = pattern[i];
+      let wordFromSplitString = splitString[i];
 
-soupServings();
+      if (map[letterFromPattern]) {
+        if (map[letterFromPattern] !== wordFromSplitString) {
+          return false;
+        }
+      } else {
+        if (Object.values(map).includes(wordFromSplitString)) {
+          return false;
+        }
+        map[letterFromPattern] = wordFromSplitString;
+      }
+    }
+    return true;
+};
+
+console.log(wordPattern("aaaa", "dog cat cat dog"));
